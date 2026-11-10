@@ -1,0 +1,31 @@
+{
+  "angles": {
+    "type": "object", "required": ["angles", "questions"],
+    "properties": {
+      "angles": {"type": "array", "minItems": 1, "maxItems": 4, "items": {"type": "object", "required": ["id", "title", "audience", "change", "example", "reason"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "audience": {"type": "string"}, "change": {"type": "string"}, "example": {"type": "string"}, "reason": {"type": "string"}}}},
+      "questions": {"type": "array", "items": {"type": "string"}}
+    }
+  },
+  "package": {
+    "type": "object", "required": ["titles", "cover", "opening", "note"],
+    "properties": {"titles": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"type": "string"}}, "cover": {"type": "string"}, "opening": {"type": "string"}, "note": {"type": "string"}}
+  },
+  "plan": {"type": "object", "required": ["report"], "properties": {"report": {"type": "string", "description": "完整建议报告。可以包含 Markdown 标题、段落、列表和表格，但整份 report 必须是一个 JSON 字符串，不要返回分节对象。"}}},
+  "review": {
+    "type": "object", "required": ["report", "edits"],
+    "properties": {"report": {"type": "string"}, "edits": {"type": "array", "items": {"type": "object", "required": ["original", "replacement", "reason", "risk"], "properties": {"original": {"type": "string"}, "replacement": {"type": "string"}, "reason": {"type": "string"}, "risk": {"type": "string", "enum": ["high", "medium", "low"]}}}}}
+  },
+  "value": {"type": "object", "required": ["report", "hypotheses"], "properties": {"report": {"type": "string"}, "hypotheses": {"type": "array", "minItems": 1, "items": {"type": "string"}}}},
+  "blind-score": {
+    "type": "object", "required": ["dimensions"],
+    "properties": {"dimensions": {"type": "object", "required": ["ER", "HP", "QL", "NA", "AB", "SR", "SAT"], "additionalProperties": {"type": "object", "required": ["score", "reason", "confidence"], "properties": {"score": {"type": "integer", "minimum": 0, "maximum": 5}, "reason": {"type": "string"}, "confidence": {"type": "string", "enum": ["high", "medium", "low"]}}}}}
+  },
+  "cheat-predict": {
+    "type": "object", "required": ["report", "bucket", "probabilities", "center", "hypotheses", "counterfactuals"],
+    "properties": {"report": {"type": "string"}, "bucket": {"type": "string", "enum": ["底部", "基础盘", "命中", "小爆", "大爆"]}, "probabilities": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "object", "required": ["bucket", "probability"], "properties": {"bucket": {"type": "string", "enum": ["底部", "基础盘", "命中", "小爆", "大爆"]}, "probability": {"type": "number", "minimum": 0, "maximum": 100}}}}, "center": {"type": "number", "minimum": 0}, "hypotheses": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "counterfactuals": {"type": "array", "minItems": 1, "items": {"type": "string"}}}
+  },
+  "retro": {
+    "type": "object", "required": ["report", "comparisons", "observations"],
+    "properties": {"report": {"type": "string"}, "comparisons": {"type": "array", "items": {"type": "object", "required": ["kind", "hypothesis", "verdict", "evidence"], "properties": {"kind": {"type": "string", "enum": ["value", "cheat"]}, "hypothesis": {"type": "string"}, "verdict": {"type": "string"}, "evidence": {"type": "string"}}}}, "observations": {"type": "array", "items": {"type": "object", "required": ["text", "evidence", "next_action"], "properties": {"text": {"type": "string"}, "evidence": {"type": "string"}, "next_action": {"type": "string"}}}}}
+  }
+}

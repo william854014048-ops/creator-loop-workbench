@@ -1,0 +1,176 @@
+{
+  "snapshot_date": "2026-11-04",
+  "note": "Original local Skill files kept byte-for-byte. Application adapters are separate. No user history or credentials included.",
+  "files": [
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\SKILL.md",
+      "sha256": "ed44b1701578e3e0d3a8a2a3802ed40467a87d5396622555a631b213caccf414"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/angle-development.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\angle-development.md",
+      "sha256": "9d681f07c42b7594dd97dcf871259e4bc3307adc8ccbd4da69845673f757b8b4"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/angle-discovery-fast.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\angle-discovery-fast.md",
+      "sha256": "7d3cb586dbdc8a66de24308a63ab0238e1801d7b1df4e0700454f1ba9d664295"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/angle-theory-sources.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\angle-theory-sources.md",
+      "sha256": "05b0a74fc1358aa3ae38f014d2907c268ae93cb0066ee8e0e8c20984f32a878b"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/candidate-selection.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\candidate-selection.md",
+      "sha256": "672e837623800edf1ff667ecd8d3e3254926a7adbc2352dae0c16b967bf86c97"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/cover-title.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\cover-title.md",
+      "sha256": "fad93e24fe83fd33a967c1198b15873db7511405210ad1b98f30437db672fdc4"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/material-selection.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\material-selection.md",
+      "sha256": "50f32a61efb238f16001b606c0479aaf664273753ceeb8d9c60377e9ff478ff0"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/module-handoff.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\module-handoff.md",
+      "sha256": "4deef900b6306389158508a3e626954eb246631b0ef7efba2fdb47f36a3f48c7"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/opening-continuity.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\opening-continuity.md",
+      "sha256": "7462b6c1f62274af5e6ede1eb2a4ef281e3a970319b67f64118d32252e4544b8"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/production-state.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\production-state.md",
+      "sha256": "8e0d86fd38acfcecd7c3b720264eed04bb233d0c4bc02d384d7166bab3ed7892"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/promise-check.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\promise-check.md",
+      "sha256": "5caae885078ca84461cbe988f82f3fa636bdc1d0310eb6c22e3892250e13fb71"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/title-surfaces.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\title-surfaces.md",
+      "sha256": "aef4c131bc3d02eabdce871e5a0f325c2fd208480237bf3b13cef7ea20ece5ea"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/topic-ladder.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\topic-ladder.md",
+      "sha256": "b5a1951e3d11c9608f647c6481793f71100abe0d4e190fd1d1ad1f8db9428980"
+    },
+    {
+      "path": "skills/upstream/dbs-title-cover-intro/references/writing-rules.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-title-cover-intro\\references\\writing-rules.md",
+      "sha256": "e470703b6f590bde6afc14d4bad699d1c6fbd3d17fe181b3768976581f52d35c"
+    },
+    {
+      "path": "skills/upstream/dbs-content/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-content\\SKILL.md",
+      "sha256": "e21b325390e6d1f662992b8b2d7465fef50b383023eb8accf4c47eea3e66cdef"
+    },
+    {
+      "path": "skills/upstream/dbs-content/知识库/Skill知识包/content_内容创作方法论.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-content\\知识库\\Skill知识包\\content_内容创作方法论.md",
+      "sha256": "c21ef28dc042aa1cc5c7a9f1e54a9ac029bc3502706ff755950b3ea01cfed9ee"
+    },
+    {
+      "path": "skills/upstream/dbs-content/知识库/Skill知识包/content_平台特性与案例.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-content\\知识库\\Skill知识包\\content_平台特性与案例.md",
+      "sha256": "d1979e48f82447497c209c10400f5447bb3d9578e85a0e203770b7e106601fd6"
+    },
+    {
+      "path": "skills/upstream/dbs-script-flow/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-script-flow\\SKILL.md",
+      "sha256": "3cb50c6ec62844637fbd3344232b0ddf675c5d474ef0bff375812b2fa1c8677f"
+    },
+    {
+      "path": "skills/upstream/dbs-content-value/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-content-value\\SKILL.md",
+      "sha256": "e9767156c0df9a9a6ad873901917aab17de0b4289ca55d6e3e5461efc9d11e0f"
+    },
+    {
+      "path": "skills/upstream/dbs-content-value/references/diagnostic-model.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\dbs-content-value\\references\\diagnostic-model.md",
+      "sha256": "5643382d92d1d7d0d23ebaf7098cba3bc6939afdbb251d16362016d2140d0d9f"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/skills/cheat-predict/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\skills\\cheat-predict\\SKILL.md",
+      "sha256": "0e04be8fe13dd7ccc5033e05a091fd2c0cef99a7d2eb812911fc99dadfc5eb76"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/skills/cheat-score-blind/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\skills\\cheat-score-blind\\SKILL.md",
+      "sha256": "02b57fee4ee3bc4fd0f06f382492c800ae44ce582da06327b4c12e0fb018e931"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/skills/cheat-retro/SKILL.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\skills\\cheat-retro\\SKILL.md",
+      "sha256": "2fe2a87f23697330362e4e5880b219ff8f8dec257f08217228868d88951dadca"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/blind-prediction-protocol.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\blind-prediction-protocol.md",
+      "sha256": "8c1c038c6e436966e647f6a5d3996966938589dbd3fa4e7e1ae732316267245d"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/bump-validation-protocol.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\bump-validation-protocol.md",
+      "sha256": "1123db6a46c25a29a113550a5456a79a4974d494e5eb9d2770ea17bd71a452c3"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/cadence-protocol.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\cadence-protocol.md",
+      "sha256": "14b235c0d3285c40c64b6a725ce36dad76a73d8777f424e0f44cb52572381f59"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/candidate-schema.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\candidate-schema.md",
+      "sha256": "e71ff5e615d553a3938b488ae9b390ae8ca8d3bbb991f07bbec77e9ce1a435ca"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/data-source-routing.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\data-source-routing.md",
+      "sha256": "46145cbcd2f58c54543ceac52285343883ccdf178a55dd180414ff258d016777"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/migration-protocol.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\migration-protocol.md",
+      "sha256": "d946fa57c310f07d51be2908ba3ccbdaafa0826489f06885a212a56770e05343"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/observation-lifecycle.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\observation-lifecycle.md",
+      "sha256": "157147e056691a413002aba14354f879e604a2da565156fd5a80b015d253d3f5"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/prediction-anatomy.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\prediction-anatomy.md",
+      "sha256": "ccc1255853bbb98930f63d137178323a8f71b2dea7e2e3d8541bd003ae2094d1"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/shared-references/state-management.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\shared-references\\state-management.md",
+      "sha256": "228fa517d3f08a8cc66eceb450c448fe43d8760d1128f371482c0c58b734cfd9"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/starter-rubrics/opinion-video-zero.md",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\starter-rubrics\\opinion-video-zero.md",
+      "sha256": "4332328c6059995e558896b3a7313fd6bf103f9e39146b80bb8328599bb70869"
+    },
+    {
+      "path": "skills/upstream/cheat-on-content/LICENSE",
+      "source": "C:\\Users\\Administrator\\.codex\\skills-manual\\cheat-on-content\\LICENSE",
+      "sha256": "202b66aaec328709a2741d159d65ca010ed0ee97d92941e7f48225255ed4aa57"
+    }
+  ]
+}

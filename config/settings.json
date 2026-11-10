@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "active_profile_id": "legacy-chat",
+  "profiles": [
+    {"id":"legacy-chat","name":"Chat Completions","provider":"chat","base_url":"https://api.openai.com/v1","model":"","effort":"","max_output_tokens":32768},
+    {"id":"legacy-responses","name":"Responses","provider":"responses","base_url":"https://api.openai.com/v1","model":"","effort":"","max_output_tokens":32768}
+  ]
+}

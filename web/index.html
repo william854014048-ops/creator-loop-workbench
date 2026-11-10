@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>口播闭环 · 创作工作台</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="/" aria-label="口播闭环首页"><span class="brand-mark">∞</span><span>口播闭环<small>让每一条，连接下一条</small></span></a>
+    <button class="new-work" id="new-work" type="button" disabled><span aria-hidden="true">＋</span>新建作品</button>
+    <button class="mobile-toggle" id="sidebar-toggle" type="button" aria-expanded="false">作品列表</button>
+    <div class="sidebar-content">
+      <div class="list-heading"><span>我的作品</span><span id="work-count">0</span></div>
+      <label class="search"><span class="sr-only">搜索作品</span><input id="work-search" placeholder="搜索作品…" type="search"></label>
+      <nav id="work-list" aria-label="作品列表"></nav>
+    </div>
+    <div class="sidebar-footer"><span class="local-dot"></span>资料保存在这台电脑<small>创作 · 发布记录 · 复盘</small><button id="version-history" type="button" class="version-link">更新记录</button></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div class="document-title"><span class="eyebrow">我的创作空间</span><input id="work-title" aria-label="作品名称" aria-describedby="title-source" placeholder="输入作品名称" maxlength="200" hidden><small id="title-source" hidden></small></div>
+      <div class="topbar-actions"><span id="active-model" class="active-model" hidden></span><span id="save-status" data-state="idle" role="status">本地工作台</span><button id="delete-work" class="button quiet danger" type="button" hidden>删除作品</button><button id="open-settings" class="button quiet" type="button">模型设置</button></div>
+    </header>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section id="workspace" hidden>
+      <nav class="steps" aria-label="作品流程" id="step-nav"></nav>
+      <div class="stage-heading"><div><div id="stage-kicker" class="eyebrow"></div><h1 id="stage-title"></h1><p id="stage-description"></p></div><span id="stage-number" aria-hidden="true"></span></div>
+      <div id="stage-processing" class="processing-banner" role="status" hidden></div>
+      <div id="stage-body"></div>
+      <footer class="step-footer"><button id="previous-step" class="button quiet" type="button">上一步</button><span id="step-footnote">原话、版本和判断会分别保存</span><button id="next-step" class="button primary" type="button">下一步 →</button></footer>
+    </section>
+    <section id="empty-work" class="empty-work">
+      <div class="empty-graphic" aria-hidden="true"><span>想说的话</span><i>↗</i><span>自己的作品</span><i>↙</i><span>下一次的灵感</span></div>
+      <span class="eyebrow">从一个真实想法开始</span><h1>把想说的话，<br>做成下一条作品。</h1><p>选角度，理清表达，重新讲一遍。<br>把发布后的观察，留给下一次创作。</p><div class="empty-hint">点击左侧「新建作品」，随时开始。</div>
+    </section>
+  </main>
+  <dialog id="delete-dialog">
+    <div class="dialog-heading"><h2>删除这条作品？</h2></div><p id="delete-name" class="delete-name"></p><p class="help">确认后从作品列表移除，作品和历史记录保留在本机文件中。</p><p id="delete-notice" class="inline-notice" role="status"></p><div class="dialog-actions"><button id="cancel-delete" class="button secondary" type="button">取消</button><button id="confirm-delete" class="button danger-solid" type="button">确认删除</button></div>
+  </dialog>
+  <dialog id="history-dialog" class="history-dialog">
+    <div class="dialog-heading"><h2>版本与更新记录</h2><button id="close-history" class="icon-button" type="button" aria-label="关闭更新记录">×</button></div><div id="history-content"></div>
+  </dialog>
+  <dialog id="settings-dialog" class="settings-dialog">
+    <form id="settings-form">
+      <div class="dialog-heading"><div><span class="eyebrow">连接你的模型</span><h2>模型设置</h2></div><button class="icon-button" id="close-settings" type="button" aria-label="关闭设置">×</button></div>
+      <p class="muted">写稿和保存可离线进行。点击 AI 操作，或点下一步启动角度、结构与改稿时，会把这一步需要的内容发送给你配置的服务。</p>
+      <div class="model-selector"><label class="field">已保存的配置<select id="saved-model-profile" aria-label="已保存的模型配置"></select></label><button id="new-model-profile" class="button secondary small" type="button">新增配置</button></div>
+      <p id="model-active-note" class="help"></p>
+      <label class="field">配置名称<input id="model-profile-name" required maxlength="80" placeholder="例如：DeepSeek 日常、GPT 审稿"></label>
+      <label class="field">服务方式<select id="model-provider"><option value="chat">DeepSeek / OpenAI 兼容接口</option><option value="responses">GPT / Responses 接口</option></select></label>
+      <label class="field">服务地址<input id="model-base-url" type="url" required placeholder="https://api.deepseek.com/v1"></label>
+      <div class="form-grid"><label class="field">模型名称<input id="model-name" required placeholder="填写服务商提供的模型名称"></label><label class="field">推理强度<select id="model-effort"><option value="default">默认</option><option value="off">关闭</option><option value="low">低</option><option value="medium">中</option><option value="high">高</option><option value="xhigh">更高</option><option value="max">最高</option></select></label></div>
+      <label class="field">输出上限（token，包含模型思考）<input id="model-output-limit" type="number" min="1024" max="131072" step="1" value="32768" required><span class="field-note">默认 32768。遇到输出达到限制时，可提高额度或降低推理强度。</span></label>
+      <label class="field">API Key <span id="key-status" class="field-note"></span><input id="model-key" type="password" autocomplete="new-password" placeholder="留空保留同一服务地址的已存密钥"></label>
+      <p class="help">每个配置单独保存密钥。同一种服务也可以保存多个配置，密钥按当前 Windows 用户加密保存。</p>
+      <div id="settings-notice" class="inline-notice" role="status"></div>
+      <div class="dialog-actions"><button id="test-model" class="button secondary" type="button">测试连接</button><button class="button primary" type="submit">保存并使用</button></div>
+    </form>
+  </dialog>
+  <dialog id="conflict-dialog" class="conflict-dialog">
+    <div class="dialog-heading"><h2>发现另一个窗口保存的版本</h2></div><p>这份输入仍保留在当前页面。先复制需要的文字，再选择下一步。</p><label class="field">当前页面内容<textarea id="conflict-local" readonly rows="8"></textarea></label><label class="field">磁盘上的内容<textarea id="conflict-server" readonly rows="8"></textarea></label><div class="dialog-actions"><button class="button secondary" id="close-conflict" type="button">继续查看当前内容</button><button class="button primary" id="load-server" type="button">载入磁盘版本</button></div>
+  </dialog>
+</body>
+</html>
